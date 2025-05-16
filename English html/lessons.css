@@ -1,0 +1,214 @@
+/* Lessons Page Specific Styles */
+.lessons-main {
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+}
+
+.lessons-hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: white;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+.lessons-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.lessons-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Skill Categories Grid */
+.skill-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-card h2 {
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Lesson List */
+.lesson-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.lesson-list li {
+    margin-bottom: 0.75rem;
+}
+
+.lesson-list li a {
+    display: block;
+    color: #4b5563;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.lesson-list li a:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateX(5px);
+}
+
+.view-all-button {
+    display: inline-block;
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.view-all-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Featured Lessons Section */
+.featured-lessons {
+    margin-top: 4rem;
+}
+
+.featured-lessons h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.lesson-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.lesson-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.lesson-card:hover {
+    transform: translateY(-5px);
+}
+
+.lesson-difficulty {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.beginner {
+    background-color: #d1fae5;
+    color: #059669;
+}
+
+.intermediate {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.advanced {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.lesson-card h3 {
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.lesson-card p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.lesson-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    color: #4b5563;
+    font-size: 0.875rem;
+}
+
+.start-lesson-button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.start-lesson-button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lessons-hero h1 {
+        font-size: 2rem;
+    }
+
+    .lessons-hero p {
+        font-size: 1rem;
+    }
+
+    .skill-categories,
+    .lesson-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card,
+    .lesson-card {
+        padding: 1.5rem;
+    }
+
+    .lesson-list li a {
+        padding: 0.5rem 0.75rem;
+    }
+}
